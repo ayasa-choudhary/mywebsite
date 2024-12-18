@@ -106,6 +106,16 @@ a{
   border: 1px solid yellow;
   box-shadow: var(--box-shadow);
 }
+.experience .right .h2{
+  text-transform: capitalize;
+}
+.experience .right .h4{
+  text-transform: capitalize;
+}
+
+.experience .right .h5{
+  text-transform: capitalize;
+}
 
 /* skilla css */
 
