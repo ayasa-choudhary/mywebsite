@@ -30,7 +30,7 @@ const Projects = () => {
                       alt="..."
                       style={{
                         width: "250px",
-                        height: "200px",
+                        height: "250px",
                         border: "2px solid yellow",
                         borderRadius: "10px",
                       }}
@@ -39,9 +39,6 @@ const Projects = () => {
                   <div className="card-body text-center">
                     <h5 className="card-title">{Data.title}</h5>
                     <p className="card-text">{Data.description}</p>
-                    <a href={Data.demo} className="btn btn-primary mx-3">
-                      Demo
-                    </a>
                     <a href={Data.source} className="btn btn-warning">
                       Code
                     </a>

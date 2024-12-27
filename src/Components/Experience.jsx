@@ -4,7 +4,7 @@ import experience from "./Data/experience.json"
 const Experience = () => {
   return (
     <>
-      <div className="container ex" id='experience'>
+      <div className="container ex my-3" id='experience'>
         <h1>Experience</h1>
         {experience.map((Data)=>{
             return(
