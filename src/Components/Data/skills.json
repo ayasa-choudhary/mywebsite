@@ -18,5 +18,25 @@
   {
     "title": "CSS",
     "imageSrc": "skills/css.png"
-  } 
+  },
+  {
+    "title": "python",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "Numpy",
+    "imageSrc": "skills/num.png"
+  }, 
+  {
+    "title": "Pandas",
+    "imageSrc": "skills/panda.png"
+  },
+  {
+    "title": "Data Science",
+    "imageSrc": "skills/data science.png"
+  }, 
+  {
+    "title": "Machine Learning",
+    "imageSrc": "skills/ML.png"
+  }
 ]
