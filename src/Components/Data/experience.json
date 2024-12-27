@@ -3,7 +3,7 @@
     "id": 0,
     "role": "Freelancer",
     "organisation": "youditech",
-    "startDate": "july, 2024",
+    "startDate": "July, 2024",
     "endDate": "Present",
     "location": "....",
     "experiences": [
@@ -14,11 +14,11 @@
   },
   {
     "id": 1,
-    "role": "Data analyst",
+    "role": "Data Analyst",
     "organisation": "Abha Power Project Pvt ltd",
-    "startDate": "nov, 2022",
-    "endDate": "july, 2024",
-    "location": "jaipur, india",
+    "startDate": "Nov, 2022",
+    "endDate": "July, 2024",
+    "location": "Jaipur, India",
     "experiences": [
       "Worked on company Dataset",
       "analyze data on performance with team"
