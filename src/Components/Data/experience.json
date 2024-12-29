@@ -10,12 +10,12 @@
       "Worked on front end application",
       "Managed project timelines independently"
     ],
-    "imageSrc": "Studio-Project.png"
+    "imageSrc": "company/Studio-Project.png"
   },
   {
     "id": 1,
-    "role": "Data Analyst",
-    "organisation": "Abha Power Project Pvt ltd",
+    "role": "Software Engineer",
+    "organisation": "Escorts Kubota ltd",
     "startDate": "Nov, 2022",
     "endDate": "July, 2024",
     "location": "Jaipur, India",
@@ -23,6 +23,6 @@
       "Worked on company Dataset",
       "analyze data on performance with team"
     ],
-    "imageSrc": "company/abhapower.png"
+    "imageSrc": "company/escorts.png"
   }
 ]
