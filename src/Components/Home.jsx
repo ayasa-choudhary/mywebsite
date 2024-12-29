@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import pdf from "../pdf/AResume.pdf"
+import pdf from "../pdf/Ayesha-Choudhary.pdf"
 import hero from './Data/hero.json'
 import Typed from 'typed.js';
 
@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
 
     const options = {
-      strings:["Welcome to my Profile", "My Name is Ayesha Choudhaary", "I'm Full Stack Developer"],
+      strings:["Welcome to my Profile", "My Name is Ayesha Choudhary", "I'm Full Stack Developer"],
       typeSpeed: 50,
       backSpeed:50,
       loop: true

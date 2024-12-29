@@ -108,6 +108,19 @@ a{
   margin-left: auto;
   text-align: right;
 }
+.left{
+  position: relative;
+  width: 40%;
+  /* height: 400px; */
+  overflow: hidden;
+  border: 2px solid #000;
+}
+.left img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
 .experience .right .h2{
   text-transform: capitalize;
 }
