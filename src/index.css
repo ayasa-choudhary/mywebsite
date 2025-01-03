@@ -27,6 +27,7 @@ a{
 .nav-bar .nav_items:hover{
   border-bottom: 3px solid;
   color: yellow;
+  width: fit-content;
 }
 
 /* Home-css */
@@ -108,14 +109,14 @@ a{
   margin-left: auto;
   text-align: right;
 }
-.left{
+.ex_left{
   position: relative;
   width: 40%;
   /* height: 400px; */
   overflow: hidden;
   border: 2px solid #000;
 }
-.left img {
+.ex_left img {
   width: 100%;
   height: auto;
   object-fit: cover;
