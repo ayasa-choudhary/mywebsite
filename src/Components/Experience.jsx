@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import experience from "./Data/experience.json"
 
 const Experience = () => {
@@ -12,8 +12,8 @@ const Experience = () => {
                 <div 
                     key={Data.id} 
                     className="ex-items text-center my-5"
-                    Data-aos="zoom-in"
-                    Data-aos-duration="1000"
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
                 >
                 <div className="left">
                         <img src={`/assets/${Data.imageSrc}`} alt="" />
