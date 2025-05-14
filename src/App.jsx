@@ -1,6 +1,6 @@
 
 
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Components/Home'
 import Experience from './Components/Experience'
