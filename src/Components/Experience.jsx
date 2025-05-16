@@ -15,7 +15,7 @@ const Experience = () => {
                     Data-aos="zoom-in"
                     Data-aos-duration="1000"
                 >
-                <div className="left">
+                <div className="ex_left">
                         <img src={`/assets/${Data.imageSrc}`} alt="" />
 
                 </div>
