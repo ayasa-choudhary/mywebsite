@@ -8,21 +8,23 @@
     "imageSrc": "skills/next.png"
   },
   {
-    "title": "Redux",
-    "imageSrc": "skills/redux.png"
+    "title": "NodeJs",
+    "imageSrc": "skills/node.png"
   },
   {
     "title": "MongoDB",
     "imageSrc": "skills/mongo.png"
   },
   {
+    "title": "Redux",
+    "imageSrc": "skills/redux.png"
+  },
+  
+  {
     "title": "JavaScript",
     "imageSrc": "skills/javascript.png"
   },
-  {
-    "title": "NodeJs",
-    "imageSrc": "skills/node.png"
-  },
+  
   {
     "title": "HTML",
     "imageSrc": "skills/html.png"
