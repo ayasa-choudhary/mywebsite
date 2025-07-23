@@ -3,6 +3,7 @@
 import  { useEffect } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Components/Home'
+import AboutMe from './Components/AboutMe'
 import Experience from './Components/Experience'
 import Skills from './Components/Skills'
 import Contact from './Components/Contact'
@@ -14,12 +15,13 @@ const App = () => {
   useEffect(() => {
     Aos.init();
     }, [])
-  
+
   return (
     <>
       <Navbar />
       <div className="container">
         <Home />
+        <AboutMe />
         <Experience />
         <Skills />
         <Projects/>

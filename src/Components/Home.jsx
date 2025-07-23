@@ -28,7 +28,7 @@ class TypedReactDemo extends React.Component {
 
   render() {
     return (
-  
+
           <span style={{ whiteSpace: 'pre', }}
             ref={(el) => { this.el = el; }}
           />
@@ -50,22 +50,22 @@ const Home = () => {
 
     ]}
   />
-            <div style={{ margin: '20px' }}>
-            <a 
-              href={pdf} 
-              download="resume.pdf" 
-              className="btn btn-outline-warning"
-            >
-              Download Resume
-            </a>
+            <div className="resume-download" style={{ margin: '20px' }}>
+              <a 
+                href={pdf} 
+                download="resume.pdf" 
+                className="btn btn-outline-warning"
+                rel="noopener noreferrer"
+              >
+                Download Resume
+              </a>
             </div>
         </div>
         <div className="right">
             <div className="img" Data-aos="fade-up-left"
             Data-aos-duration="1000">
-                <img src={`/assets/${hero.imgSrc}`} alt="hero" />
+                <img src={`/assets/${hero.imgSrc}`} alt="Ayesha Choudhary - Full Stack Developer" />
             </div>
-            
         </div>
       </div>
     </>
