@@ -1,11 +1,21 @@
 :root{
   --box-shadow: 5px 5px 10px 0px rgba(101, 175, 10, 0.5);
   --bg-color:rgb(40, 47, 97);
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Montserrat', sans-serif;
 }
 
 body{
   background-color: rgb(4, 23, 55);
   color: white;
+  font-family: var(--body-font);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 a{
   text-decoration: none;
@@ -53,10 +63,28 @@ a{
   display: inline-block;
   margin: 5px;
 }
+.nav-bar .nav_items{
+  position: relative;
+  transition: color 0.3s ease;
+}
+
 .nav-bar .nav_items:hover{
-  border-bottom: 3px solid;
   color: yellow;
-  width: fit-content;
+}
+
+.nav-bar .nav_items::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  transition: width 0.3s ease;
+}
+
+.nav-bar .nav_items:hover::after {
+  width: 100%;
 }
 
 /* Media queries for navbar */
@@ -133,27 +161,29 @@ a{
 
 @keyframes superman{
   0%{
-     border-color: blue;
-     transform: translate(0, 0px);
-     box-shadow: 10px 10px 100px 50px blue;
+     border-color: #4a6bff;
+     transform: translate(0, 0px) rotate(0deg);
+     box-shadow: 0 0 60px 20px rgba(74, 107, 255, 0.6);
   }
   25%{
-    border-color: rgb(239, 244, 11);
-     box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+    border-color: #ffde59;
+    transform: translate(0, 5px) rotate(2deg);
+    box-shadow: 0 0 60px 20px rgba(255, 222, 89, 0.6);
   }
   50%{
-    border-color: rgb(12, 12, 199);
-     transform: translate(0, 10px);
-     box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+    border-color: #4a6bff;
+    transform: translate(0, 10px) rotate(0deg);
+    box-shadow: 0 0 60px 20px rgba(74, 107, 255, 0.6);
   }
   75%{
-    border-color: rgb(130, 217, 160);
-     box-shadow: 10px 10px 100px 50px gb(130, 217, 160);
+    border-color: #59ffb2;
+    transform: translate(0, 5px) rotate(-2deg);
+    box-shadow: 0 0 60px 20px rgba(89, 255, 178, 0.6);
   }
   100%{
-    border-color: rgb(50, 55, 205);
-     transform: translate(0, 0px);
-     box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+    border-color: #4a6bff;
+    transform: translate(0, 0px) rotate(0deg);
+    box-shadow: 0 0 60px 20px rgba(74, 107, 255, 0.6);
   }
 }
 
@@ -228,6 +258,17 @@ a{
   padding: 15px;
 }
 
+.projects .card {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.projects .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(255, 255, 0, 0.2) !important;
+}
+
 .projects .card-img-top {
   max-width: 100%;
   height: auto;
@@ -235,11 +276,11 @@ a{
   object-fit: contain;
   border: 2px solid yellow;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .projects .card:hover .card-img-top {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .projects .card-body {
@@ -353,7 +394,7 @@ a{
   padding: 20px 0;
 }
 .contact-icon .items {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   margin: 15px;
   height: 70px;
   width: 70px;
@@ -362,17 +403,42 @@ a{
   align-items: center;
   border-radius: 100%;
   border: 2px solid yellow;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-icon .items::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 0, 0.2), rgba(74, 107, 255, 0.2));
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .contact-icon .items:hover {
   background-color: var(--bg-color);
-  box-shadow: var(--box-shadow);
-  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(255, 255, 0, 0.3);
+  transform: translateY(-10px) scale(1.1);
+}
+
+.contact-icon .items:hover::before {
+  opacity: 1;
 }
 
 .contact-icon .items .icons {
   font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  z-index: 1;
+}
+
+.contact-icon .items:hover .icons {
+  transform: scale(1.2);
+  color: #ffde59;
 }
 
 /* Media queries for contact section */

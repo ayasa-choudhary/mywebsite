@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <>
       <div className="container home" id='home'> 
-        <div className="left" Data-aos="fade-up-right" Data-aos-duration="1000">
+        <div className="left" data-aos="fade-up-right" data-aos-duration="1200" data-aos-delay="100" data-aos-easing="ease-in-out">
         <TypedReactDemo
     strings={[
               "Welcome to my profile", 
@@ -50,7 +50,7 @@ const Home = () => {
 
     ]}
   />
-            <div className="resume-download" style={{ margin: '20px' }}>
+            <div className="resume-download" style={{ margin: '20px' }} data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
               <a 
                 href={pdf} 
                 download="resume.pdf" 
@@ -62,8 +62,8 @@ const Home = () => {
             </div>
         </div>
         <div className="right">
-            <div className="img" Data-aos="fade-up-left"
-            Data-aos-duration="1000">
+            <div className="img" data-aos="fade-up-left"
+            data-aos-duration="1200" data-aos-delay="100" data-aos-easing="ease-in-out">
                 <img src={`/assets/${hero.imgSrc}`} alt="Ayesha Choudhary - Full Stack Developer" />
             </div>
         </div>

@@ -5,11 +5,11 @@ const Projects = () => {
   return (
     <>
       <div className="container projects my-3" id="projects">
-        <div className="section-title" Data-aos="fade-up" Data-aos-duration="1000">
+        <div className="section-title" data-aos="fade-up" data-aos-duration="1000">
           <h1>Projects</h1>
         </div>
         <div className="row d-flex justify-content-center">
-          {project.map((Data) => (
+          {project.map((Data, index) => (
               <div
                 key={Data.key}
                 className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
@@ -20,8 +20,10 @@ const Projects = () => {
                     border: "1px solid yellow",
                     boxShadow: "var(--box-shadow)",
                   }}
-                  Data-aos="flip-right"
-                  Data-aos-duration="1000"
+                  data-aos={index % 3 === 0 ? "flip-left" : index % 3 === 1 ? "flip-right" : "zoom-in"}
+                  data-aos-duration="1000"
+                  data-aos-delay={100 * (index % 4)}
+                  data-aos-easing="ease-in-out"
                 >
                   <div className="img-container">
                     <img
