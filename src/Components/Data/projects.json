@@ -29,7 +29,7 @@
     "imageSrc": "/assets/hero/ayesha_fashion.png",
     "description": "A modern e-commerce fashion website with a sleek user interface.",
     "explanation": "Features product catalog, shopping cart, user authentication, and responsive design for optimal shopping experience across all devices.",
-    "source": "https://github.com/ayasa-choudhary/Ayesha-Fashion"
+    "source": "https://ayesha-fashion.vercel.app/"
   },
   {
     "key": 4,
